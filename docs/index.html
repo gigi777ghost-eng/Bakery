@@ -1,657 +1,556 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>La Dolceria — Bakery & Coffee</title>
   <meta
     name="description"
-    content="La Dolceria Bakery & Coffee — pasticceria, forno e caffetteria artigianale tra Reggio Emilia e Cadelbosco Sopra."
-  >
+    content="La Dolceria Bakery & Coffee: lievitati artigianali, specialty coffee e pane fresco ogni giorno a Reggio Emilia."
+  />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <title>La Dolceria — Bakery & Coffee</title>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..700&family=DM+Serif+Display:ital@0;1&family=Italianno&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
     rel="stylesheet"
-  >
+  />
 
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
 </head>
 
 <body>
+  <a class="skip-link" href="#contenuto">Salta al contenuto</a>
 
-  <header class="site-header" data-header>
-    <div class="container nav">
-
-      <a class="brand" href="#top" aria-label="La Dolceria Bakery & Coffee">
-        <span class="brand__name">La Dolceria</span>
-        <span class="brand__sub">Bakery & Coffee</span>
+  <header class="site-header" id="top">
+    <div class="container nav-wrapper">
+      <a class="brand" href="#top" aria-label="La Dolceria, torna alla home">
+        <span class="brand-mark">LD</span>
+        <span class="brand-copy">
+          <strong>La Dolceria</strong>
+          <small>Bakery &amp; Coffee</small>
+        </span>
       </a>
 
       <button
         class="menu-toggle"
         type="button"
-        aria-label="Apri menu"
+        aria-label="Apri il menu"
         aria-expanded="false"
-        data-menu-toggle
+        aria-controls="main-navigation"
       >
+        <span></span>
         <span></span>
         <span></span>
       </button>
 
-      <nav class="nav__links" data-navigation>
-        <a href="#creazioni">Creazioni</a>
-        <a href="#storia">La nostra storia</a>
-        <a href="#sedi">Dove trovarci</a>
-        <a class="nav__cta" href="#sedi">Vieni a trovarci</a>
+      <nav class="main-navigation" id="main-navigation" aria-label="Navigazione principale">
+        <a href="#chi-siamo">Chi Siamo</a>
+        <a href="#prodotti">Prodotti</a>
+        <a href="#galleria">Galleria</a>
+        <a href="#dove-siamo">Dove Siamo</a>
+        <a class="button button-primary nav-cta" href="#prenota">Prenota un Tavolo</a>
       </nav>
-
     </div>
   </header>
 
-  <main id="top">
+  <main id="contenuto">
 
     <!-- HERO -->
-    <section class="hero">
-      <div class="container hero__grid">
-
-        <div class="hero__copy">
-          <p class="eyebrow">Forno · Pasticceria · Caffetteria</p>
+    <section class="hero section">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">Forno artigianale · Reggio Emilia</span>
 
           <h1>
-            Il piacere <br> 
-            <em>di ogni giorno.</em>
+            Il gusto autentico della tradizione,
+            <em>ogni mattina.</em>
           </h1>
 
-          <p class="hero__intro">
-            Dolci, pane ad alta idratazione, caffè di piantagione e ricette tradizionali. Ogni mattina portiamo nel nostro laboratorio la passione per le cose fatte a mano.
+          <p class="hero-text">
+            Lievitati a lunga fermentazione, specialty coffee e pane appena
+            sfornato. Una piccola pausa italiana fatta di ingredienti
+            semplici, mani artigiane e profumi che fanno venir voglia di restare.
           </p>
 
-          <div class="hero__actions">
-            <a class="button button--dark" href="#creazioni">
-              <span>Scopri le creazioni</span>
-              <span class="button__icon">↗</span>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#prodotti">
+              Scopri il Menu
             </a>
 
-            <a class="hero__location" href="#sedi">
-              <span class="hero__location-icon"></span>
-              <span>
-                <small>Le nostre sedi</small>
-                Trova quella più vicina
-              </span>
-              <span class="hero__location-arrow">→</span>
+            <a class="button button-secondary" href="#dove-siamo">
+              Vieni a trovarci
             </a>
           </div>
 
-          <div class="hero__scroll">
-            <span></span>
-            Scorri per scoprire
+          <div class="hero-note">
+            <span class="note-dot"></span>
+            <span>Impasti ogni giorno · Ingredienti selezionati · Caffè specialty</span>
           </div>
         </div>
 
-        <div class="hero__visual">
-          <div class="hero-card">
-            <img
-              src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=1200&q=85"
-              alt="Pane e prodotti da forno artigianali appena sfornati"
-            >
-            <div class="hero-card__label">
-              <span>01</span>
-              <span>Fatto ogni mattina</span>
+        <div class="hero-visual">
+          <div class="hero-image-card">
+            <picture>
+              <source
+                media="(min-width: 768px)"
+                srcset="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1200&q=85"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=900&q=82"
+                alt="Pane e prodotti da forno artigianali appena sfornati"
+                fetchpriority="high"
+              />
+            </picture>
+
+            <div class="floating-card">
+              <span class="floating-card-label">Oggi dal forno</span>
+              <strong>Focaccia Genovese</strong>
+              <span>olio EVO · sale marino · rosmarino</span>
             </div>
           </div>
-
-          <div class="hero__stamp">
-            <span>dal</span>
-            <strong>forno</strong>
-            <span>alla tua tavola</span>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-
-    <!-- FEATURE HIGHLIGHTS BAR -->
-    <section class="features-bar">
-      <div class="container features-bar__grid">
-        <div class="feature-item">
-          <span class="feature-item__icon">🌾</span>
-          <div>
-            <strong>Lievitato Madre</strong>
-            <p>Farine selezionate e fermentazione lenta</p>
-          </div>
-        </div>
-        <div class="feature-item">
-          <span class="feature-item__icon">☕</span>
-          <div>
-            <strong>Caffetteria D'Eccellenza</strong>
-            <p>Espresso e specialty coffee estrazione perfetta</p>
-          </div>
-        </div>
-        <div class="feature-item">
-          <span class="feature-item__icon">🥐</span>
-          <div>
-            <strong>Pasticceria Fresca</strong>
-            <p>Sfornata quotidianamente alle 06:00</p>
-          </div>
         </div>
       </div>
     </section>
 
-
-    <!-- MARQUEE -->
-    <section class="marquee" aria-label="Specialità">
-      <div class="marquee__track">
-        <span>PASTICCERIA</span>
-        <i>✦</i>
-        <span>PANE ARTIGIANALE</span>
-        <i>✦</i>
-        <span>CAFFÈ DI QUALITÀ</span>
-        <i>✦</i>
-        <span>COLAZIONE LENTA</span>
-        <i>✦</i>
-        <span>ERBAZZONE REGGIANO</span>
-        <i>✦</i>
-        <span>PASTICCERIA</span>
-        <i>✦</i>
-        <span>PANE ARTIGIANALE</span>
-        <i>✦</i>
-        <span>CAFFÈ DI QUALITÀ</span>
-        <i>✦</i>
-        <span>COLAZIONE LENTA</span>
-        <i>✦</i>
-        <span>ERBAZZONE REGGIANO</span>
-      </div>
-    </section>
-
-
-    <!-- STORY -->
-    <section class="story section" id="storia">
-      <div class="container story__grid">
-
-        <div class="section-number">01</div>
-
-        <div class="story__heading">
-          <p class="eyebrow">La nostra idea</p>
-          <h2>
-            Semplice fuori.
-            <em>Speciale dentro.</em>
-          </h2>
+    <!-- INTRO -->
+    <section class="intro section section-tight" id="chi-siamo">
+      <div class="container intro-grid">
+        <div>
+          <span class="eyebrow">La nostra idea</span>
+          <h2>Una bakery italiana con anima contemporanea.</h2>
         </div>
 
-        <div class="story__content">
-          <p class="lead">
-            La Dolceria nasce dall'amore per le cose fatte bene: una brioche appena sfornata, un buon caffè espresso, il profumo croccante del pane caldo e quel piccolo rituale che trasforma una pausa in un momento da ricordare.
-          </p>
-
+        <div class="intro-copy">
           <p>
-            Siamo forno, pasticceria e caffetteria contemporanea. Ogni giorno prepariamo specialità dolci e salate ponendo al centro la genuinità delle materie prime, la lievitazione naturale e il rispetto per i sapori del territorio reggiano.
+            La Dolceria nasce dall'amore per le cose fatte bene e senza fretta.
+            Ogni mattina impastiamo, sfogliamo e tostiamo con la stessa cura che
+            metteremmo nella nostra cucina di casa.
           </p>
 
-          <a class="text-link" href="#creazioni">
-            Guarda cosa prepariamo →
+          <a class="text-link" href="#galleria">
+            Scopri il nostro mondo
+            <span aria-hidden="true">↗</span>
           </a>
         </div>
-
       </div>
     </section>
 
-
-    <!-- PHOTO SLIDER -->
-    <section class="photo-showcase">
+    <!-- GALLERY -->
+    <section class="gallery-section section" id="galleria">
       <div class="container">
-
-        <div class="showcase-head">
+        <div class="section-heading">
           <div>
-            <p class="eyebrow">Dentro La Dolceria</p>
-            <h2>Un assaggio <em>visivo.</em></h2>
+            <span class="eyebrow">Dalla vetrina</span>
+            <h2>Fatto oggi. Gustato adesso.</h2>
           </div>
 
-          <div class="slider-controls">
+          <div class="slider-controls" aria-label="Controlli galleria">
             <button
               class="slider-button"
               type="button"
-              aria-label="Foto precedente"
               data-slider-prev
-            >←</button>
+              aria-label="Immagine precedente"
+            >
+              ←
+            </button>
 
             <button
               class="slider-button"
               type="button"
-              aria-label="Foto successiva"
               data-slider-next
-            >→</button>
+              aria-label="Immagine successiva"
+            >
+              →
+            </button>
           </div>
         </div>
 
-        <div class="photo-slider" data-slider>
-          <div class="photo-slider__track" data-slider-track>
+        <div class="slider" data-slider tabindex="0">
+          <div class="slider-track">
 
-            <article class="photo-slide">
+            <article class="slide is-active">
               <img
-                src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=1200&q=85"
-                alt="Dolci artigianali mono-porzione"
-                draggable="false"
-              >
-              <div class="photo-slide__caption">
-                <span>01</span>
-                <strong>Piccole tentazioni</strong>
+                src="https://images.unsplash.com/photo-1623341214825-9f4f963727da?auto=format&fit=crop&w=1800&q=85"
+                alt="Croissant sfogliati appena sfornati"
+                loading="eager"
+              />
+              <div class="slide-overlay">
+                <span>01 / 04</span>
+                <strong>La sfoglia del mattino</strong>
               </div>
             </article>
 
-            <article class="photo-slide">
+            <article class="slide">
               <img
-                src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1200&q=85"
-                alt="Pane a lievitazione naturale"
-                draggable="false"
-              >
-              <div class="photo-slide__caption">
-                <span>02</span>
-                <strong>Il profumo del forno</strong>
+                src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1800&q=85"
+                alt="Espresso specialty servito al banco"
+                loading="lazy"
+              />
+              <div class="slide-overlay">
+                <span>02 / 04</span>
+                <strong>Espresso, senza compromessi</strong>
               </div>
             </article>
 
-            <article class="photo-slide">
+            <article class="slide">
               <img
-                src="https://images.unsplash.com/photo-1559620192-032c4bc4674e?auto=format&fit=crop&w=1200&q=85"
-                alt="Croissant e colazione italiana"
-                draggable="false"
-              >
-              <div class="photo-slide__caption">
-                <span>03</span>
-                <strong>La colazione lenta</strong>
+                src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1800&q=85"
+                alt="Pane artigianale con crosta dorata"
+                loading="lazy"
+              />
+              <div class="slide-overlay">
+                <span>03 / 04</span>
+                <strong>Pane a lunga fermentazione</strong>
               </div>
             </article>
 
-            <article class="photo-slide">
+            <article class="slide">
               <img
-                src="https://images.unsplash.com/photo-1519869325930-281384150729?auto=format&fit=crop&w=1200&q=85"
-                alt="Torte e creazioni per eventi"
-                draggable="false"
-              >
-              <div class="photo-slide__caption">
-                <span>04</span>
-                <strong>Fatto per festeggiare</strong>
-              </div>
-            </article>
-
-            <article class="photo-slide">
-              <img
-                src="https://images.unsplash.com/photo-1495147466023-ac5c588e2e94?auto=format&fit=crop&w=1200&q=85"
-                alt="Selezione di mignons artigianali"
-                draggable="false"
-              >
-              <div class="photo-slide__caption">
-                <span>05</span>
-                <strong>Dolce quotidiano</strong>
+                src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=1800&q=85"
+                alt="Dolce italiano artigianale"
+                loading="lazy"
+              />
+              <div class="slide-overlay">
+                <span>04 / 04</span>
+                <strong>Piccoli peccati di gola</strong>
               </div>
             </article>
 
           </div>
         </div>
 
-        <div class="slider-progress">
-          <span data-slider-progress></span>
-        </div>
-
-      </div>
-    </section>
-
-
-    <!-- MENU -->
-    <section class="menu section" id="creazioni">
-      <div class="container">
-
-        <div class="menu__header">
-          <div>
-            <p class="eyebrow">Dal nostro banco</p>
-            <h2>Le nostre <em>creazioni.</em></h2>
+        <div class="slider-footer">
+          <div class="slider-dots" aria-label="Seleziona una foto">
+            <button class="dot is-active" type="button" aria-label="Vai alla foto 1"></button>
+            <button class="dot" type="button" aria-label="Vai alla foto 2"></button>
+            <button class="dot" type="button" aria-label="Vai alla foto 3"></button>
+            <button class="dot" type="button" aria-label="Vai alla foto 4"></button>
           </div>
 
-          
-        </div>
-
-        <div class="filters" role="tablist" aria-label="Categorie menu">
-          <button
-            class="filter is-active"
-            type="button"
-            role="tab"
-            aria-selected="true"
-            data-filter="all"
-          >
-            Tutto
-          </button>
-
-          <button
-            class="filter"
-            type="button"
-            role="tab"
-            aria-selected="false"
-            data-filter="dolce"
-          >
-            Dolce
-          </button>
-
-          <button
-            class="filter"
-            type="button"
-            role="tab"
-            aria-selected="false"
-            data-filter="salato"
-          >
-            Salato
-          </button>
-
-          <button
-            class="filter"
-            type="button"
-            role="tab"
-            aria-selected="false"
-            data-filter="caffe"
-          >
-            Caffè
-          </button>
-        </div>
-
-        <div class="menu-grid">
-
-          <!-- ITEM 1 -->
-          <article class="menu-card menu-card--large" data-category="dolce">
-            <div class="menu-card__image">
-              <img
-                src="https://images.unsplash.com/photo-1587668178277-295251f900ce?auto=format&fit=crop&w=1200&q=85"
-                alt="Cornetto sfogliato alla crema"
-              >
-              <span class="menu-card__number">01</span>
-              <span class="badge">Specialità</span>
-            </div>
-
-            <div class="menu-card__body">
-              <div>
-                <p class="menu-card__category">Pasticceria</p>
-                <h3>Cornetto alla Crema</h3>
-                <p class="menu-card__desc">Sfoglia al burro francese con bacche di vaniglia Madagascar.</p>
-              </div>
-              <span class="menu-card__price">€ 1.80</span>
-            </div>
-          </article>
-
-          <!-- ITEM 2 -->
-          <article class="menu-card" data-category="dolce">
-            <div class="menu-card__image">
-              <img
-                src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=1000&q=85"
-                alt="Torte artigianali da forno"
-              >
-              <span class="menu-card__number">02</span>
-            </div>
-
-            <div class="menu-card__body">
-              <div>
-                <p class="menu-card__category">Dolce</p>
-                <h3>Torte Artigianali</h3>
-                <p class="menu-card__desc">Crostate alla frutta fresca, torte da forno e monoporzioni.</p>
-              </div>
-              <span class="menu-card__price">€ 4.50</span>
-            </div>
-          </article>
-
-          <!-- ITEM 3 -->
-          <article class="menu-card" data-category="salato">
-            <div class="menu-card__image">
-              <img
-                src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1000&q=85"
-                alt="Pane di grano duro"
-              >
-              <span class="menu-card__number">03</span>
-            </div>
-
-            <div class="menu-card__body">
-              <div>
-                <p class="menu-card__category">Forno</p>
-                <h3>Pane di Grano Duro</h3>
-                <p class="menu-card__desc">Impasto con pasta madre viva e cottura su pietra.</p>
-              </div>
-              <span class="menu-card__price">€ 4.80 / kg</span>
-            </div>
-          </article>
-
-          <!-- ITEM 4 -->
-          <article class="menu-card menu-card--dark" data-category="caffe">
-            <div class="menu-card__image">
-              <img
-                src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=1000&q=85"
-                alt="Caffè espresso estratto a regola d'arte"
-              >
-              <span class="menu-card__number">04</span>
-            </div>
-
-            <div class="menu-card__body">
-              <div>
-                <p class="menu-card__category">Caffetteria</p>
-                <h3>Espresso & Cappuccino</h3>
-                <p class="menu-card__desc">Miscele selezionate 100% Arabica e latte biologico locale.</p>
-              </div>
-              <span class="menu-card__price">€ 1.40</span>
-            </div>
-
-            <div class="menu-card__quote">
-              “Una pausa fatta bene trasforma l'intera giornata.”
-            </div>
-          </article>
-
-          <!-- ITEM 5 -->
-          <article class="menu-card menu-card--wide" data-category="salato">
-            <div class="menu-card__image">
-              <img
-                src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=1200&q=85"
-                alt="Focaccia e salati da forno"
-              >
-              <span class="menu-card__number">05</span>
-              <span class="badge">Tradizione</span>
-            </div>
-
-            <div class="menu-card__body">
-              <div>
-                <p class="menu-card__category">Salato</p>
-                <h3>Erbazzone & Focacce</h3>
-                <p class="menu-card__desc">Il tipico erbazzone reggiano e focaccine calde all'olio EVOO.</p>
-              </div>
-              <span class="menu-card__price">€ 3.50</span>
-            </div>
-          </article>
-
+          <p>Scorri con il dito per esplorare.</p>
         </div>
       </div>
     </section>
 
-
-    <!-- LOCATION -->
-    <section class="locations section" id="sedi">
+    <!-- PRODUCTS -->
+    <section class="products-section section" id="prodotti">
       <div class="container">
-
-        <div class="locations__intro">
-          <p class="eyebrow">Passa a trovarci</p>
-
-          <h2>
-            Due indirizzi.
-            <em>Una sola Dolceria.</em>
-          </h2>
-
+        <div class="section-heading section-heading-center">
+          <span class="eyebrow">Le firme de La Dolceria</span>
+          <h2>Le nostre specialità</h2>
           <p>
-            Che sia una colazione rilassante, un pranzo veloce o della buona pasticceria da portare a casa, ti aspettiamo con il sorriso nei nostri punti vendita.
+            Una selezione di grandi classici e piccole ossessioni del momento.
           </p>
         </div>
 
-        <div class="location-grid">
+        <div class="products-grid">
 
-          <!-- SEDE 1 -->
-          <article class="location-card">
-            <div class="location-card__top">
-              <span class="location-card__index">01</span>
-
-              <div>
-                <p class="eyebrow">Sede</p>
-                <h3>Cadelbosco Sopra</h3>
-              </div>
-            </div>
-
-            <address>
-              Via Mons. Saccani, 4<br>
-              42023 Cadelbosco Sopra (RE)
-            </address>
-
-            <div class="location-card__hours">
-              <span>Orari Apertura</span>
-              <strong>Lun — Sab</strong>
-              <strong>06:00 — 13:30 / 16:00 — 19:30</strong>
-              <small>Domenica: 07:00 — 13:00</small>
-            </div>
-
-            <div class="location-card__map">
-              <iframe
-                src="https://www.google.com/maps?q=Via+Mons.+Saccani+4,+Cadelbosco+Sopra,+RE,+Italy&output=embed"
+          <article class="product-card">
+            <div class="product-image">
+              <img
+                src="https://images.unsplash.com/photo-1623341214825-9f4f963727da?auto=format&fit=crop&w=900&q=82"
+                alt="Cornetto sfogliato al pistacchio"
                 loading="lazy"
-                title="La Dolceria Bakery & Coffee — Cadelbosco Sopra"
-                referrerpolicy="no-referrer-when-downgrade"
-              ></iframe>
+              />
+              <span class="product-tag">Best seller</span>
             </div>
 
-            <a
-              class="button button--outline"
-              href="https://www.google.com/maps/dir/?api=1&destination=Via+Mons.+Saccani+4,+Cadelbosco+Sopra,+RE,+Italy"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Indicazioni stradali
-              <span>↗</span>
-            </a>
+            <div class="product-content">
+              <div>
+                <span class="product-category">Lievitato</span>
+                <h3>Cornetto Sfogliato al Pistacchio</h3>
+              </div>
+              <p>
+                Sfoglia croccante, crema al pistacchio e una finitura
+                leggermente salata.
+              </p>
+              <span class="product-price">€ 4,50</span>
+            </div>
           </article>
 
-
-          <!-- SEDE 2 -->
-          <article class="location-card location-card--featured">
-            <div class="location-card__top">
-              <span class="location-card__index">02</span>
-
-              <div>
-                <p class="eyebrow">Sede</p>
-                <h3>Reggio Emilia · Sesso</h3>
-              </div>
-            </div>
-
-            <address>
-              Via Guglielmo Tirelli, 5<br>
-              42124 Reggio Emilia (RE)
-            </address>
-
-            <div class="location-card__hours">
-              <span>Orari Apertura</span>
-              <strong>Lun — Sab</strong>
-              <strong>06:30 — 13:30</strong>
-              <small>Domenica chiuso</small>
-            </div>
-
-            <div class="location-card__map">
-              <iframe
-                src="https://www.google.com/maps?q=Via+Guglielmo+Tirelli+5,+Reggio+Emilia,+RE,+Italy&output=embed"
+          <article class="product-card">
+            <div class="product-image">
+              <img
+                src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=900&q=82"
+                alt="Tazza di espresso specialty"
                 loading="lazy"
-                title="La Dolceria Bakery & Coffee — Reggio Emilia"
-                referrerpolicy="no-referrer-when-downgrade"
-              ></iframe>
+              />
+              <span class="product-tag product-tag-sage">Ogni mattina</span>
             </div>
 
-            <a
-              class="button button--dark"
-              href="https://www.google.com/maps/dir/?api=1&destination=Via+Guglielmo+Tirelli+5,+Reggio+Emilia,+RE,+Italy"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Indicazioni stradali
-              <span>↗</span>
-            </a>
+            <div class="product-content">
+              <div>
+                <span class="product-category">Caffetteria</span>
+                <h3>Espresso Specialty</h3>
+              </div>
+              <p>
+                Micro-lotti selezionati, tostatura delicata e un profilo
+                aromatico pulito e persistente.
+              </p>
+              <span class="product-price">€ 2,20</span>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-image">
+              <img
+                src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=900&q=82"
+                alt="Focaccia genovese appena sfornata"
+                loading="lazy"
+              />
+              <span class="product-tag">Forno</span>
+            </div>
+
+            <div class="product-content">
+              <div>
+                <span class="product-category">Salato</span>
+                <h3>Focaccia Genovese</h3>
+              </div>
+              <p>
+                Alta, soffice e fragrante, con olio extravergine e cristalli
+                di sale marino.
+              </p>
+              <span class="product-price">€ 5,90</span>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-image">
+              <img
+                src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=900&q=82"
+                alt="Dolce artigianale al cioccolato"
+                loading="lazy"
+              />
+              <span class="product-tag product-tag-sage">Dolce</span>
+            </div>
+
+            <div class="product-content">
+              <div>
+                <span class="product-category">Pasticceria</span>
+                <h3>Dolce del Giorno</h3>
+              </div>
+              <p>
+                Una creazione diversa ogni giorno, ispirata alla stagione e
+                agli ingredienti disponibili.
+              </p>
+              <span class="product-price">€ 4,80</span>
+            </div>
           </article>
 
         </div>
-
       </div>
     </section>
 
+    <!-- LOCATION -->
+    <section class="location-section section" id="dove-siamo">
+      <div class="container">
+        <div class="location-card">
 
-    <!-- CTA -->
-    <section class="closing">
-      <div class="container closing__inner">
-        <p class="eyebrow">Ci vediamo al banco</p>
+          <div class="location-content">
+            <span class="eyebrow">Passa a trovarci</span>
+            <h2>Il tuo tavolo preferito è a due passi.</h2>
 
-        <h2>
-          Prenditi una pausa.
-          <em>Te la meriti.</em>
-        </h2>
+            <div class="location-details">
 
-        <a class="button button--light" href="#sedi">
-          Vieni a trovarci
-          <span>↗</span>
-        </a>
+              <div class="detail-item">
+                <span class="detail-icon" aria-hidden="true">⌖</span>
+                <div>
+                  <span class="detail-label">Indirizzi</span>
+                  <p>
+                    Via Guglielmo Tirelli 5, Sesso (RE)<br />
+                    Via Monsignore Saccani 4, Cadelbosco di Sopra (RE)
+                  </p>
+                </div>
+              </div>
+
+              <div class="detail-item">
+                <span class="detail-icon" aria-hidden="true">☎</span>
+                <div>
+                  <span class="detail-label">Telefono</span>
+                  <p>
+                    Sede Sesso: <a href="tel:+390522123456" style="text-decoration: underline;">0522 123456</a><br />
+                    Sede Cadelbosco: <a href="tel:+390522654321" style="text-decoration: underline;">0522 654321</a>
+                  </p>
+                </div>
+              </div>
+
+              <div class="detail-item">
+                <span class="detail-icon" aria-hidden="true">◷</span>
+                <div>
+                  <span class="detail-label">Orari di apertura</span>
+                  <p>
+                    Lunedì – Sabato · 06:30 – 13:30<br />
+                    Domenica · Chiuso
+                  </p>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="location-actions">
+              <a
+                class="button button-primary"
+                href="https://www.google.com/maps/search/?api=1&query=Via+Guglielmo+Tirelli+5+Sesso+RE"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Mappa Sede Sesso
+              </a>
+
+              <a
+                class="button button-primary"
+                href="https://www.google.com/maps/search/?api=1&query=Via+Monsignore+Saccani+4+Cadelbosco+Sopra+RE"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Mappa Sede Cadelbosco
+              </a>
+
+              <a class="text-link" href="#prenota">
+                Prenota un tavolo
+                <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="location-visual" aria-hidden="true">
+            <div class="map-decoration">
+              <div class="map-line map-line-1"></div>
+              <div class="map-line map-line-2"></div>
+              <div class="map-line map-line-3"></div>
+              <div class="map-block block-1"></div>
+              <div class="map-block block-2"></div>
+              <div class="map-block block-3"></div>
+              <div class="map-block block-4"></div>
+
+              <div class="map-pin">
+                <span>LD</span>
+              </div>
+
+              <div class="map-label">La Dolceria</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- RESERVATION -->
+    <section class="reservation-section section" id="prenota">
+      <div class="container reservation-box">
+        <div>
+          <span class="eyebrow">Un caffè insieme?</span>
+          <h2>Prenota il tuo tavolo.</h2>
+          <p>
+            Per colazioni lente, incontri veloci o semplicemente per concederti
+            una pausa fatta bene.
+          </p>
+        </div>
+
+        <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+          <a class="button button-light" href="tel:+390522123456">
+            Chiama Sesso
+          </a>
+          <a class="button button-light" href="tel:+390522654321">
+            Chiama Cadelbosco
+          </a>
+        </div>
       </div>
     </section>
 
   </main>
 
-
   <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container footer__grid">
+  <footer class="site-footer">
+    <div class="container footer-grid">
 
-      <div class="footer__brand">
-        <span class="brand__name">La Dolceria</span>
-        <span class="brand__sub">Bakery & Coffee</span>
+      <div class="footer-brand">
+        <a class="brand brand-light" href="#top">
+          <span class="brand-mark">LD</span>
+          <span class="brand-copy">
+            <strong>La Dolceria</strong>
+            <small>Bakery &amp; Coffee</small>
+          </span>
+        </a>
 
         <p>
-          Pane a lievitazione naturale, pasticceria artigianale e miscele di caffè selezionate.
+          Pane, caffè e dolci fatti con tempo, cura e una buona dose di passione.
         </p>
       </div>
 
-      <div class="footer__links">
-        <p class="eyebrow">Navigazione</p>
-        <a href="#creazioni">Creazioni</a>
-        <a href="#storia">La nostra storia</a>
-        <a href="#sedi">Dove trovarci</a>
+      <div class="footer-navigation">
+        <span class="footer-title">Esplora</span>
+        <a href="#chi-siamo">Chi Siamo</a>
+        <a href="#prodotti">Prodotti</a>
+        <a href="#galleria">Galleria</a>
+        <a href="#dove-siamo">Dove Siamo</a>
       </div>
 
-      <div class="footer__links">
-        <p class="eyebrow">Seguici</p>
+      <div class="footer-social">
+        <span class="footer-title">Seguici</span>
 
-        <a
-          href="https://www.instagram.com/ladolceriabakery/"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Segui La Dolceria Bakery su Instagram"
-        >
-          Instagram ↗
-        </a>
+        <div class="social-links">
+          <a
+            href="https://www.instagram.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+              <circle cx="12" cy="12" r="4"></circle>
+              <circle cx="17.5" cy="6.5" r="1"></circle>
+            </svg>
+          </a>
 
-        <a
-          href="https://www.facebook.com/ladolceriafornopasticceria/"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Segui La Dolceria Forno Pasticceria su Facebook"
-        >
-          Facebook ↗
-        </a>
+          <a
+            href="https://www.facebook.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Facebook"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M14 8h3V4.5c-.5-.1-1.8-.2-3.3-.2-3.2 0-5.4 2-5.4 5.5V13H5v4h3.3v7h4.1v-7h3.4l.5-4h-3.9V10c0-1.2.3-2 1.6-2Z"></path>
+            </svg>
+          </a>
+        </div>
       </div>
 
+      <div class="footer-newsletter">
+        <span class="footer-title">Una dolce novità ogni tanto</span>
+
+        <form class="newsletter-form" action="#" method="post">
+          <label class="sr-only" for="email">La tua email</label>
+
+          <input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="La tua email"
+            autocomplete="email"
+            required
+          />
+
+          <button type="submit" aria-label="Iscriviti alla newsletter">
+            →
+          </button>
+        </form>
+
+        <small>
+          Iscrivendoti accetti di ricevere le nostre comunicazioni.
+        </small>
+      </div>
     </div>
 
-    <div class="container footer__bottom">
-      <span>© 2026 La Dolceria Bakery & Coffee. Tutti i diritti riservati.</span>
-      <span>Reggio Emilia · Emilia-Romagna</span>
+    <div class="container footer-bottom">
+      <span>© 2026 La Dolceria Bakery &amp; Coffee</span>
+      <span>Reggio nell'Emilia · Italia</span>
     </div>
   </footer>
 
-  <script src="script.js" defer></script>
 </body>
 </html>
