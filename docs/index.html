@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>La Dolceria — Bakery & Coffee</title>
+  <meta
+    name="description"
+    content="La Dolceria Bakery & Coffee — pasticceria, forno e caffetteria tra Reggio Emilia e Cadelbosco Sopra."
+  >
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&family=Italianno&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <header class="site-header" data-header>
+    <div class="container nav">
+
+      <a class="brand" href="#top" aria-label="La Dolceria Bakery & Coffee">
+        <span class="brand__name">La Dolceria</span>
+        <span class="brand__sub">Bakery & Coffee</span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Apri menu"
+        aria-expanded="false"
+        data-menu-toggle
+      >
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav__links" data-navigation>
+        <a href="#creazioni">Creazioni</a>
+        <a href="#storia">La nostra storia</a>
+        <a href="#sedi">Dove trovarci</a>
+        <a class="nav__cta" href="#sedi">Vieni a trovarci</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero__grid">
+
+        <div class="hero__copy">
+          <p class="eyebrow">Forno · Pasticceria · Caffetteria</p>
+
+          <h1>
+            Il piacere <br> 
+            <em>di ogni giorno.</em>
+          </h1>
+
+          <p class="hero__intro">
+            Dolci, pane, caffè e sapori che nascono ogni mattina
+            nel nostro laboratorio e arrivano sulla tua tavola ancora
+            pieni di profumo.
+          </p>
+
+          <div class="hero__actions">
+            <a class="button button--dark" href="#creazioni">
+              Scopri le creazioni
+              <span>↗</span>
+            </a>
+
+            <a class="text-link" href="#sedi">
+              Trova la sede più vicina
+            </a>
+          </div>
+        </div>
+
+        <div class="hero__visual">
+          <div class="hero-card">
+            <img
+              src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=1400&q=85"
+              alt="Pane e prodotti da forno artigianali"
+            >
+
+            <div class="hero-card__label">
+              <span>01</span>
+              <span>Fatto ogni mattina</span>
+            </div>
+          </div>
+
+          <div class="hero__stamp">
+            <span>dal</span>
+            <strong>forno</strong>
+            <span>alla tua tavola</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- MARQUEE -->
+    <section class="marquee" aria-label="Specialità">
+      <div class="marquee__track">
+        <span>PASTICCERIA</span>
+        <i>✦</i>
+        <span>PANE</span>
+        <i>✦</i>
+        <span>CAFFÈ</span>
+        <i>✦</i>
+        <span>COLAZIONE</span>
+        <i>✦</i>
+        <span>ERBAZZONE</span>
+        <i>✦</i>
+        <span>PASTICCERIA</span>
+        <i>✦</i>
+        <span>PANE</span>
+        <i>✦</i>
+        <span>CAFFÈ</span>
+      </div>
+    </section>
+
+
+    <!-- INTRO / STORY -->
+    <section class="story section" id="storia">
+      <div class="container story__grid">
+
+        <div class="section-number">01</div>
+
+        <div class="story__heading">
+          <p class="eyebrow">La nostra idea</p>
+
+          <h2>
+            Semplice fuori.
+            <em>Speciale dentro.</em>
+          </h2>
+        </div>
+
+        <div class="story__content">
+          <p class="lead">
+            La Dolceria nasce dall'amore per le cose fatte bene:
+            una brioche appena sfornata, un buon caffè, il profumo
+            del pane e quel piccolo rituale che trasforma una pausa
+            in qualcosa di più.
+          </p>
+
+          <p>
+            Siamo forno, pasticceria e caffetteria. Ogni giorno
+            prepariamo dolce e salato pensando prima di tutto
+            al gusto, alla freschezza e alla semplicità.
+          </p>
+
+          <a class="text-link" href="#creazioni">
+            Guarda cosa prepariamo →
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- PHOTO SLIDER -->
+    <section class="photo-showcase">
+      <div class="container">
+
+        <div class="showcase-head">
+          <div>
+            <p class="eyebrow">Dentro La Dolceria</p>
+            <h2>Un assaggio <em>visivo.</em></h2>
+          </div>
+
+          <div class="slider-controls">
+            <button
+              class="slider-button"
+              type="button"
+              aria-label="Foto precedente"
+              data-slider-prev
+            >←</button>
+
+            <button
+              class="slider-button"
+              type="button"
+              aria-label="Foto successiva"
+              data-slider-next
+            >→</button>
+          </div>
+        </div>
+
+        <div class="photo-slider" data-slider>
+
+          <div class="photo-slider__track" data-slider-track>
+
+            <article class="photo-slide">
+              <img
+                src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=1200&q=85"
+                alt="Dolci artigianali"
+                draggable="false"
+              >
+              <div class="photo-slide__caption">
+                <span>01</span>
+                <strong>Piccole tentazioni</strong>
+              </div>
+            </article>
+
+            <article class="photo-slide">
+              <img
+                src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1200&q=85"
+                alt="Pane appena sfornato"
+                draggable="false"
+              >
+              <div class="photo-slide__caption">
+                <span>02</span>
+                <strong>Il profumo del forno</strong>
+              </div>
+            </article>
+
+            <article class="photo-slide">
+              <img
+                src="https://images.unsplash.com/photo-1559620192-032c4bc4674e?auto=format&fit=crop&w=1200&q=85"
+                alt="Croissant e prodotti da colazione"
+                draggable="false"
+              >
+              <div class="photo-slide__caption">
+                <span>03</span>
+                <strong>La colazione lenta</strong>
+              </div>
+            </article>
+
+            <article class="photo-slide">
+              <img
+                src="https://images.unsplash.com/photo-1519869325930-281384150729?auto=format&fit=crop&w=1200&q=85"
+                alt="Torta artigianale"
+                draggable="false"
+              >
+              <div class="photo-slide__caption">
+                <span>04</span>
+                <strong>Fatto per festeggiare</strong>
+              </div>
+            </article>
+
+            <article class="photo-slide">
+              <img
+                src="https://images.unsplash.com/photo-1495147466023-ac5c588e2e94?auto=format&fit=crop&w=1200&q=85"
+                alt="Pasticceria italiana"
+                draggable="false"
+              >
+              <div class="photo-slide__caption">
+                <span>05</span>
+                <strong>Dolce quotidiano</strong>
+              </div>
+            </article>
+
+          </div>
+
+        </div>
+
+        <div class="slider-progress">
+          <span data-slider-progress></span>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- MENU -->
+    <section class="menu section" id="creazioni">
+      <div class="container">
+
+        <div class="menu__header">
+          <div>
+            <p class="eyebrow">Dal nostro banco</p>
+            <h2>Le nostre <em>creazioni.</em></h2>
+          </div>
+
+          <p>
+            Una selezione di dolce, salato e caffetteria.
+            Il banco cambia con le stagioni.
+          </p>
+        </div>
+
+        <div class="filters" role="tablist" aria-label="Categorie menu">
+          <button
+            class="filter is-active"
+            type="button"
+            data-filter="all"
+          >
+            Tutto
+          </button>
+
+          <button
+            class="filter"
+            type="button"
+            data-filter="dolce"
+          >
+            Dolce
+          </button>
+
+          <button
+            class="filter"
+            type="button"
+            data-filter="salato"
+          >
+            Salato
+          </button>
+
+          <button
+            class="filter"
+            type="button"
+            data-filter="caffe"
+          >
+            Caffè
+          </button>
+        </div>
+
+        <div class="menu-grid">
+
+          <article class="menu-card menu-card--large" data-category="dolce">
+            <div class="menu-card__image">
+              <img
+                src="https://images.unsplash.com/photo-1587668178277-295251f900ce?auto=format&fit=crop&w=1200&q=85"
+                alt="Croissant alla crema"
+              >
+              <span class="menu-card__number">01</span>
+            </div>
+
+            <div class="menu-card__body">
+              <div>
+                <p class="menu-card__category">Dolce</p>
+                <h3>Cornetto<br>alla crema</h3>
+              </div>
+
+              
+            </div>
+          </article>
+
+
+          <article class="menu-card" data-category="dolce">
+            <div class="menu-card__image">
+              <img
+                src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=1000&q=85"
+                alt="Torta al cioccolato"
+              >
+              <span class="menu-card__number">02</span>
+            </div>
+
+            <div class="menu-card__body">
+              <div>
+                <p class="menu-card__category">Dolce</p>
+                <h3>Torte<br>artigianali</h3>
+              </div>
+
+              
+            </div>
+          </article>
+
+
+          <article class="menu-card" data-category="salato">
+            <div class="menu-card__image">
+              <img
+                src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1000&q=85"
+                alt="Pane artigianale"
+              >
+              <span class="menu-card__number">03</span>
+            </div>
+
+            <div class="menu-card__body">
+              <div>
+                <p class="menu-card__category">Forno</p>
+                <h3>Pane<br>quotidiano</h3>
+              </div>
+
+              
+            </div>
+          </article>
+
+
+          <article class="menu-card menu-card--dark" data-category="caffe">
+            <div class="menu-card__image">
+              <img
+                src="https://t3.ftcdn.net/jpg/02/67/56/80/360_F_267568050_gKkcBAI5XkpEHNpipkx2aIarNbwarCRN.jpg"
+                alt="Pane artigianale"
+              >
+              <span class="menu-card__number">04</span>
+            </div>
+            <div class="menu-card__body">
+              <div>
+                <p class="menu-card__category">Caffè</p>
+                <h3>Il tuo<br>espresso.</h3>
+              </div>
+
+              
+            </div>
+
+            <div class="menu-card__quote">
+              “Una pausa fatta bene<br>cambia la giornata.”
+            </div>
+          </article>
+
+
+          <article class="menu-card menu-card--wide" data-category="salato">
+            <div class="menu-card__image">
+              <img
+                src="https://www.dolcesalato.com/wp-content/uploads/sites/5/2023/05/snack-salato-Renato-Bosco.jpg"
+                alt="Prodotti salati da forno"
+              >
+              <span class="menu-card__number">05</span>
+            </div>
+
+            <div class="menu-card__body">
+              <div>
+                <p class="menu-card__category">Salato</p>
+                <h3>La pausa<br>salata</h3>
+              </div>
+
+             
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- LOCATION -->
+    <section class="locations section" id="sedi">
+      <div class="container">
+
+        <div class="locations__intro">
+          <p class="eyebrow">Passa a trovarci</p>
+
+          <h2>
+            Due indirizzi.
+            <em>Una sola Dolceria.</em>
+          </h2>
+
+          <p>
+            Che sia una colazione veloce, una pausa caffè o qualcosa
+            di speciale da portare a casa, ti aspettiamo.
+          </p>
+        </div>
+
+
+        <div class="location-grid">
+
+          <!-- SEDE 1 -->
+          <article class="location-card">
+
+            <div class="location-card__top">
+              <span class="location-card__index">01</span>
+
+              <div>
+                <p class="eyebrow">Sede</p>
+                <h3>Cadelbosco Sopra</h3>
+              </div>
+            </div>
+
+            <address>
+              Via Mons. Saccani, 4<br>
+              42023 Cadelbosco Sopra RE
+            </address>
+
+            <div class="location-card__map">
+              <iframe
+                src="https://www.google.com/maps?q=Via+Mons.+Saccani+4,+Cadelbosco+Sopra,+RE,+Italy&output=embed"
+                loading="lazy"
+                title="La Dolceria Bakery & Coffee — Cadelbosco Sopra"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+
+            <a
+              class="button button--outline"
+              href="https://www.google.com/maps/dir/?api=1&destination=Via+Mons.+Saccani+4,+Cadelbosco+Sopra,+RE,+Italy"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Indicazioni stradali
+              <span>↗</span>
+            </a>
+
+          </article>
+
+
+          <!-- SEDE 2 -->
+          <article class="location-card location-card--featured">
+
+            <div class="location-card__top">
+              <span class="location-card__index">02</span>
+
+              <div>
+                <p class="eyebrow">Sede</p>
+                <h3>Reggio Emilia · Sesso</h3>
+              </div>
+            </div>
+
+            <address>
+              Via Guglielmo Tirelli, 5<br>
+              42124 Reggio Emilia RE
+            </address>
+
+            <div class="location-card__hours">
+              <span>Orari</span>
+
+              <strong>Lun — Sab</strong>
+              <strong>06:30 — 13:30</strong>
+
+              <small>Domenica chiuso</small>
+            </div>
+
+            <div class="location-card__map">
+              <iframe
+                src="https://www.google.com/maps?q=Via+Guglielmo+Tirelli+5,+Reggio+Emilia,+RE,+Italy&output=embed"
+                loading="lazy"
+                title="La Dolceria Bakery & Coffee — Reggio Emilia"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+
+            <a
+              class="button button--dark"
+              href="https://www.google.com/maps/dir/?api=1&destination=Via+Guglielmo+Tirelli+5,+Reggio+Emilia,+RE,+Italy"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Indicazioni stradali
+              <span>↗</span>
+            </a>
+
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- CTA -->
+    <section class="closing">
+      <div class="container closing__inner">
+        <p class="eyebrow">Ci vediamo al banco</p>
+
+        <h2>
+          Prenditi una pausa.
+          <em>Te la meriti.</em>
+        </h2>
+
+        <a class="button button--light" href="#sedi">
+          Vieni a trovarci
+          <span>↗</span>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__grid">
+
+      <div class="footer__brand">
+        <span class="brand__name">La Dolceria</span>
+        <span class="brand__sub">Bakery & Coffee</span>
+
+        <p>
+          Pane, pasticceria, caffè<br>
+          e cose buone.
+        </p>
+      </div>
+
+      <div class="footer__links">
+        <p class="eyebrow">Navigazione</p>
+        <a href="#creazioni">Creazioni</a>
+        <a href="#storia">La nostra storia</a>
+        <a href="#sedi">Sedi</a>
+      </div>
+
+      <div class="footer__links">
+        <p class="eyebrow">Seguici</p>
+
+        <a
+          href="https://www.instagram.com/ladolceriabakery/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Segui La Dolceria Bakery su Instagram"
+        >
+          Instagram ↗
+        </a>
+
+        <a
+          href="https://www.facebook.com/ladolceriafornopasticceria/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Segui La Dolceria Forno Pasticceria su Facebook"
+        >
+          Facebook ↗
+        </a>
+      </div>
+
+
+    </div>
+
+    <div class="container footer__bottom">
+      <span>© 2026 La Dolceria Bakery & Coffee</span>
+      <span>Reggio Emilia · Emilia-Romagna</span>
+    </div>
+  </footer>
+
+
+  <script src="script.js" defer></script>
+
+</body>
+</html>
