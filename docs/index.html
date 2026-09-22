@@ -7,14 +7,14 @@
   <title>La Dolceria — Bakery & Coffee</title>
   <meta
     name="description"
-    content="La Dolceria Bakery & Coffee — pasticceria, forno e caffetteria tra Reggio Emilia e Cadelbosco Sopra."
+    content="La Dolceria Bakery & Coffee — pasticceria, forno e caffetteria artigianale tra Reggio Emilia e Cadelbosco Sopra."
   >
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
   <link
-    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&family=Italianno&display=swap"
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..700&family=DM+Serif+Display:ital@0;1&family=Italianno&display=swap"
     rel="stylesheet"
   >
 
@@ -67,32 +67,40 @@
           </h1>
 
           <p class="hero__intro">
-            Dolci, pane, caffè e sapori che nascono ogni mattina
-            nel nostro laboratorio e arrivano sulla tua tavola ancora
-            pieni di profumo.
+            Dolci, pane ad alta idratazione, caffè di piantagione e ricette tradizionali. Ogni mattina portiamo nel nostro laboratorio la passione per le cose fatte a mano.
           </p>
 
           <div class="hero__actions">
             <a class="button button--dark" href="#creazioni">
-              Scopri le creazioni
-              <span>↗</span>
+              <span>Scopri le creazioni</span>
+              <span class="button__icon">↗</span>
             </a>
 
-            <a class="text-link" href="#sedi">
-              Trova la sede più vicina
+            <a class="hero__location" href="#sedi">
+              <span class="hero__location-icon">⌖</span>
+              <span>
+                <small>Le nostre sedi</small>
+                Trova quella più vicina
+              </span>
+              <span class="hero__location-arrow">→</span>
             </a>
+          </div>
+
+          <div class="hero__scroll">
+            <span></span>
+            Scorri per scoprire
           </div>
         </div>
 
         <div class="hero__visual">
           <div class="hero-card">
             <img
-              src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=1400&q=85"
-              alt="Pane e prodotti da forno artigianali"
+              src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=1200&q=85"
+              alt="Pane e prodotti da forno artigianali appena sfornati"
             >
-
             <div class="hero-card__label">
               <span>01</span>
+              <span>Fatto ogni mattina</span>
             </div>
           </div>
 
@@ -107,29 +115,61 @@
     </section>
 
 
+    <!-- FEATURE HIGHLIGHTS BAR -->
+    <section class="features-bar">
+      <div class="container features-bar__grid">
+        <div class="feature-item">
+          <span class="feature-item__icon">🌾</span>
+          <div>
+            <strong>Lievitato Madre</strong>
+            <p>Farine selezionate e fermentazione lenta</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <span class="feature-item__icon">☕</span>
+          <div>
+            <strong>Caffetteria D'Eccellenza</strong>
+            <p>Espresso e specialty coffee estrazione perfetta</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <span class="feature-item__icon">🥐</span>
+          <div>
+            <strong>Pasticceria Fresca</strong>
+            <p>Sfornata quotidianamente alle 06:00</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
     <!-- MARQUEE -->
     <section class="marquee" aria-label="Specialità">
       <div class="marquee__track">
         <span>PASTICCERIA</span>
         <i>✦</i>
-        <span>PANE</span>
+        <span>PANE ARTIGIANALE</span>
         <i>✦</i>
-        <span>CAFFÈ</span>
+        <span>CAFFÈ DI QUALITÀ</span>
         <i>✦</i>
-        <span>COLAZIONE</span>
+        <span>COLAZIONE LENTA</span>
         <i>✦</i>
-        <span>ERBAZZONE</span>
+        <span>ERBAZZONE REGGIANO</span>
         <i>✦</i>
         <span>PASTICCERIA</span>
         <i>✦</i>
-        <span>PANE</span>
+        <span>PANE ARTIGIANALE</span>
         <i>✦</i>
-        <span>CAFFÈ</span>
+        <span>CAFFÈ DI QUALITÀ</span>
+        <i>✦</i>
+        <span>COLAZIONE LENTA</span>
+        <i>✦</i>
+        <span>ERBAZZONE REGGIANO</span>
       </div>
     </section>
 
 
-    <!-- INTRO / STORY -->
+    <!-- STORY -->
     <section class="story section" id="storia">
       <div class="container story__grid">
 
@@ -137,7 +177,6 @@
 
         <div class="story__heading">
           <p class="eyebrow">La nostra idea</p>
-
           <h2>
             Semplice fuori.
             <em>Speciale dentro.</em>
@@ -146,16 +185,11 @@
 
         <div class="story__content">
           <p class="lead">
-            La Dolceria nasce dall'amore per le cose fatte bene:
-            una brioche appena sfornata, un buon caffè, il profumo
-            del pane e quel piccolo rituale che trasforma una pausa
-            in qualcosa di più.
+            La Dolceria nasce dall'amore per le cose fatte bene: una brioche appena sfornata, un buon caffè espresso, il profumo croccante del pane caldo e quel piccolo rituale che trasforma una pausa in un momento da ricordare.
           </p>
 
           <p>
-            Siamo forno, pasticceria e caffetteria. Ogni giorno
-            prepariamo dolce e salato pensando prima di tutto
-            al gusto, alla freschezza e alla semplicità.
+            Siamo forno, pasticceria e caffetteria contemporanea. Ogni giorno prepariamo specialità dolci e salate ponendo al centro la genuinità delle materie prime, la lievitazione naturale e il rispetto per i sapori del territorio reggiano.
           </p>
 
           <a class="text-link" href="#creazioni">
@@ -195,13 +229,12 @@
         </div>
 
         <div class="photo-slider" data-slider>
-
           <div class="photo-slider__track" data-slider-track>
 
             <article class="photo-slide">
               <img
                 src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=1200&q=85"
-                alt="Dolci artigianali"
+                alt="Dolci artigianali mono-porzione"
                 draggable="false"
               >
               <div class="photo-slide__caption">
@@ -213,7 +246,7 @@
             <article class="photo-slide">
               <img
                 src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1200&q=85"
-                alt="Pane appena sfornato"
+                alt="Pane a lievitazione naturale"
                 draggable="false"
               >
               <div class="photo-slide__caption">
@@ -225,7 +258,7 @@
             <article class="photo-slide">
               <img
                 src="https://images.unsplash.com/photo-1559620192-032c4bc4674e?auto=format&fit=crop&w=1200&q=85"
-                alt="Croissant e prodotti da colazione"
+                alt="Croissant e colazione italiana"
                 draggable="false"
               >
               <div class="photo-slide__caption">
@@ -237,7 +270,7 @@
             <article class="photo-slide">
               <img
                 src="https://images.unsplash.com/photo-1519869325930-281384150729?auto=format&fit=crop&w=1200&q=85"
-                alt="Torta artigianale"
+                alt="Torte e creazioni per eventi"
                 draggable="false"
               >
               <div class="photo-slide__caption">
@@ -249,7 +282,7 @@
             <article class="photo-slide">
               <img
                 src="https://images.unsplash.com/photo-1495147466023-ac5c588e2e94?auto=format&fit=crop&w=1200&q=85"
-                alt="Pasticceria italiana"
+                alt="Selezione di mignons artigianali"
                 draggable="false"
               >
               <div class="photo-slide__caption">
@@ -259,7 +292,6 @@
             </article>
 
           </div>
-
         </div>
 
         <div class="slider-progress">
@@ -280,16 +312,15 @@
             <h2>Le nostre <em>creazioni.</em></h2>
           </div>
 
-          <p>
-            Una selezione di dolce, salato e caffetteria.
-            Il banco cambia con le stagioni.
-          </p>
+          
         </div>
 
         <div class="filters" role="tablist" aria-label="Categorie menu">
           <button
             class="filter is-active"
             type="button"
+            role="tab"
+            aria-selected="true"
             data-filter="all"
           >
             Tutto
@@ -298,6 +329,8 @@
           <button
             class="filter"
             type="button"
+            role="tab"
+            aria-selected="false"
             data-filter="dolce"
           >
             Dolce
@@ -306,6 +339,8 @@
           <button
             class="filter"
             type="button"
+            role="tab"
+            aria-selected="false"
             data-filter="salato"
           >
             Salato
@@ -314,6 +349,8 @@
           <button
             class="filter"
             type="button"
+            role="tab"
+            aria-selected="false"
             data-filter="caffe"
           >
             Caffè
@@ -322,31 +359,33 @@
 
         <div class="menu-grid">
 
+          <!-- ITEM 1 -->
           <article class="menu-card menu-card--large" data-category="dolce">
             <div class="menu-card__image">
               <img
                 src="https://images.unsplash.com/photo-1587668178277-295251f900ce?auto=format&fit=crop&w=1200&q=85"
-                alt="Croissant alla crema"
+                alt="Cornetto sfogliato alla crema"
               >
               <span class="menu-card__number">01</span>
+              <span class="badge">Specialità</span>
             </div>
 
             <div class="menu-card__body">
               <div>
-                <p class="menu-card__category">Dolce</p>
-                <h3>Cornetto<br>alla crema</h3>
+                <p class="menu-card__category">Pasticceria</p>
+                <h3>Cornetto alla Crema</h3>
+                <p class="menu-card__desc">Sfoglia al burro francese con bacche di vaniglia Madagascar.</p>
               </div>
-
-              
+              <span class="menu-card__price">€ 1.80</span>
             </div>
           </article>
 
-
+          <!-- ITEM 2 -->
           <article class="menu-card" data-category="dolce">
             <div class="menu-card__image">
               <img
                 src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=1000&q=85"
-                alt="Torta al cioccolato"
+                alt="Torte artigianali da forno"
               >
               <span class="menu-card__number">02</span>
             </div>
@@ -354,19 +393,19 @@
             <div class="menu-card__body">
               <div>
                 <p class="menu-card__category">Dolce</p>
-                <h3>Torte<br>artigianali</h3>
+                <h3>Torte Artigianali</h3>
+                <p class="menu-card__desc">Crostate alla frutta fresca, torte da forno e monoporzioni.</p>
               </div>
-
-              
+              <span class="menu-card__price">€ 4.50</span>
             </div>
           </article>
 
-
+          <!-- ITEM 3 -->
           <article class="menu-card" data-category="salato">
             <div class="menu-card__image">
               <img
                 src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1000&q=85"
-                alt="Pane artigianale"
+                alt="Pane di grano duro"
               >
               <span class="menu-card__number">03</span>
             </div>
@@ -374,53 +413,55 @@
             <div class="menu-card__body">
               <div>
                 <p class="menu-card__category">Forno</p>
-                <h3>Pane<br>quotidiano</h3>
+                <h3>Pane di Grano Duro</h3>
+                <p class="menu-card__desc">Impasto con pasta madre viva e cottura su pietra.</p>
               </div>
-
-              
+              <span class="menu-card__price">€ 4.80 / kg</span>
             </div>
           </article>
 
-
+          <!-- ITEM 4 -->
           <article class="menu-card menu-card--dark" data-category="caffe">
             <div class="menu-card__image">
               <img
-                src="https://t3.ftcdn.net/jpg/02/67/56/80/360_F_267568050_gKkcBAI5XkpEHNpipkx2aIarNbwarCRN.jpg"
-                alt="Pane artigianale"
+                src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=1000&q=85"
+                alt="Caffè espresso estratto a regola d'arte"
               >
               <span class="menu-card__number">04</span>
             </div>
+
             <div class="menu-card__body">
               <div>
-                <p class="menu-card__category">Caffè</p>
-                <h3>Il tuo<br>espresso.</h3>
+                <p class="menu-card__category">Caffetteria</p>
+                <h3>Espresso & Cappuccino</h3>
+                <p class="menu-card__desc">Miscele selezionate 100% Arabica e latte biologico locale.</p>
               </div>
-
-              
+              <span class="menu-card__price">€ 1.40</span>
             </div>
 
             <div class="menu-card__quote">
-              “Una pausa fatta bene<br>cambia la giornata.”
+              “Una pausa fatta bene trasforma l'intera giornata.”
             </div>
           </article>
 
-
+          <!-- ITEM 5 -->
           <article class="menu-card menu-card--wide" data-category="salato">
             <div class="menu-card__image">
               <img
-                src="https://www.dolcesalato.com/wp-content/uploads/sites/5/2023/05/snack-salato-Renato-Bosco.jpg"
-                alt="Prodotti salati da forno"
+                src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=1200&q=85"
+                alt="Focaccia e salati da forno"
               >
               <span class="menu-card__number">05</span>
+              <span class="badge">Tradizione</span>
             </div>
 
             <div class="menu-card__body">
               <div>
                 <p class="menu-card__category">Salato</p>
-                <h3>La pausa<br>salata</h3>
+                <h3>Erbazzone & Focacce</h3>
+                <p class="menu-card__desc">Il tipico erbazzone reggiano e focaccine calde all'olio EVOO.</p>
               </div>
-
-             
+              <span class="menu-card__price">€ 3.50</span>
             </div>
           </article>
 
@@ -442,17 +483,14 @@
           </h2>
 
           <p>
-            Che sia una colazione veloce, una pausa caffè o qualcosa
-            di speciale da portare a casa, ti aspettiamo.
+            Che sia una colazione rilassante, un pranzo veloce o della buona pasticceria da portare a casa, ti aspettiamo con il sorriso nei nostri punti vendita.
           </p>
         </div>
-
 
         <div class="location-grid">
 
           <!-- SEDE 1 -->
           <article class="location-card">
-
             <div class="location-card__top">
               <span class="location-card__index">01</span>
 
@@ -464,8 +502,15 @@
 
             <address>
               Via Mons. Saccani, 4<br>
-              42023 Cadelbosco Sopra RE
+              42023 Cadelbosco Sopra (RE)
             </address>
+
+            <div class="location-card__hours">
+              <span>Orari Apertura</span>
+              <strong>Lun — Sab</strong>
+              <strong>06:00 — 13:30 / 16:00 — 19:30</strong>
+              <small>Domenica: 07:00 — 13:00</small>
+            </div>
 
             <div class="location-card__map">
               <iframe
@@ -485,13 +530,11 @@
               Indicazioni stradali
               <span>↗</span>
             </a>
-
           </article>
 
 
           <!-- SEDE 2 -->
           <article class="location-card location-card--featured">
-
             <div class="location-card__top">
               <span class="location-card__index">02</span>
 
@@ -503,15 +546,13 @@
 
             <address>
               Via Guglielmo Tirelli, 5<br>
-              42124 Reggio Emilia RE
+              42124 Reggio Emilia (RE)
             </address>
 
             <div class="location-card__hours">
-              <span>Orari</span>
-
+              <span>Orari Apertura</span>
               <strong>Lun — Sab</strong>
               <strong>06:30 — 13:30</strong>
-
               <small>Domenica chiuso</small>
             </div>
 
@@ -533,7 +574,6 @@
               Indicazioni stradali
               <span>↗</span>
             </a>
-
           </article>
 
         </div>
@@ -571,8 +611,7 @@
         <span class="brand__sub">Bakery & Coffee</span>
 
         <p>
-          Pane, pasticceria, caffè<br>
-          e cose buone.
+          Pane a lievitazione naturale, pasticceria artigianale e miscele di caffè selezionate.
         </p>
       </div>
 
@@ -580,7 +619,7 @@
         <p class="eyebrow">Navigazione</p>
         <a href="#creazioni">Creazioni</a>
         <a href="#storia">La nostra storia</a>
-        <a href="#sedi">Sedi</a>
+        <a href="#sedi">Dove trovarci</a>
       </div>
 
       <div class="footer__links">
@@ -605,17 +644,14 @@
         </a>
       </div>
 
-
     </div>
 
     <div class="container footer__bottom">
-      <span>© 2026 La Dolceria Bakery & Coffee</span>
+      <span>© 2026 La Dolceria Bakery & Coffee. Tutti i diritti riservati.</span>
       <span>Reggio Emilia · Emilia-Romagna</span>
     </div>
   </footer>
 
-
   <script src="script.js" defer></script>
-
 </body>
 </html>
